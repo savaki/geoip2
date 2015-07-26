@@ -22,12 +22,12 @@ func New(userId, licenseKey string) *Api {
 }
 
 func WithClient(api *Api, client *http.Client) *Api {
-	return WithClientFunc(api, client.Do)
+	return WithClientFunc(api, wrap(client.Do))
 }
 
-func WithClientFunc(api *Api, doFunc func(req *http.Request) (*http.Response, error)) *Api {
+func WithClientFunc(api *Api, ctxFunc func(context.Context, *http.Request) (*http.Response, error)) *Api {
 	return &Api{
-		doFunc:     wrap(doFunc),
+		doFunc:     ctxFunc,
 		userId:     api.userId,
 		licenseKey: api.licenseKey,
 	}

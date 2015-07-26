@@ -11,6 +11,7 @@ import (
 	"fmt"
 
 	. "github.com/smartystreets/goconvey/convey"
+	"golang.org/x/net/context"
 )
 
 var sample = `
@@ -155,7 +156,7 @@ func TestApi(t *testing.T) {
 		api := New("blah-user-id", "blah-license-key")
 
 		Convey("When I make a query that returns a valid result", func() {
-			doFunc := func(*http.Request) (*http.Response, error) {
+			doFunc := func(context.Context, *http.Request) (*http.Response, error) {
 				resp := &http.Response{
 					StatusCode: 200,
 					Body:       ioutil.NopCloser(strings.NewReader(sample)),
@@ -197,7 +198,7 @@ func TestApi(t *testing.T) {
 		Convey("When I make a query that returns an invalid result", func() {
 			code := "IP_ADDRESS_REQUIRED"
 			message := "You have not supplied an IP address, which is a required field."
-			doFunc := func(*http.Request) (*http.Response, error) {
+			doFunc := func(context.Context, *http.Request) (*http.Response, error) {
 				layout := `
                 {
                     "code":"%s",
