@@ -9,7 +9,7 @@ import (
 	"golang.org/x/net/context"
 )
 
-func ExampleCity() {
+func ExampleApi_City() {
 	userId := os.Getenv("MAXMIND_USER_ID")
 	licenseKey := os.Getenv("MAXMIND_LICENSE_KEY")
 	api := geoip2.New(userId, licenseKey)
@@ -18,7 +18,7 @@ func ExampleCity() {
 	json.NewEncoder(os.Stdout).Encode(resp)
 }
 
-func ExampleCountry() {
+func ExampleApi_Country() {
 	userId := os.Getenv("MAXMIND_USER_ID")
 	licenseKey := os.Getenv("MAXMIND_LICENSE_KEY")
 	api := geoip2.New(userId, licenseKey)
@@ -28,7 +28,7 @@ func ExampleCountry() {
 	json.NewEncoder(os.Stdout).Encode(resp)
 }
 
-func ExampleInsights() {
+func ExampleApi_Insights() {
 	userId := os.Getenv("MAXMIND_USER_ID")
 	licenseKey := os.Getenv("MAXMIND_LICENSE_KEY")
 	api := geoip2.New(userId, licenseKey)
