@@ -1,4 +1,4 @@
-package geoip2_test
+package geoip2
 
 import (
 	"encoding/json"
