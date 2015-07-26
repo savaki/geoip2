@@ -15,7 +15,7 @@ func ExampleCity() {
 	json.NewEncoder(os.Stdout).Encode(resp)
 }
 
-func ExampleWithTimeout() {
+func ExampleContext() {
 	api := geoip2.New(os.Getenv("MAXMIND_USER_ID"), os.Getenv("MAXMIND_LICENSE_KEY"))
 
 	ctx, _ := context.WithTimeout(context.Background(), 3*time.Second)
