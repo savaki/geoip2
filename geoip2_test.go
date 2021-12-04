@@ -31,120 +31,131 @@ import (
 var sample = `
 {
   "city":  {
-      "confidence":  25,
-      "geoname_id": 54321,
-      "names":  {
-          "de":    "Los Angeles",
-          "en":    "Los Angeles",
-          "es":    "Los Ángeles",
-          "fr":    "Los Angeles",
-          "ja":    "ロサンゼルス市",
-          "pt-BR":  "Los Angeles",
-          "ru":    "Лос-Анджелес",
-          "zh-CN": "洛杉矶"
-      }
+    "confidence":  25,
+    "geoname_id": 54321,
+    "names":  {
+      "de":    "Los Angeles",
+      "en":    "Los Angeles",
+      "es":    "Los Ángeles",
+      "fr":    "Los Angeles",
+      "ja":    "ロサンゼルス市",
+      "pt-BR":  "Los Angeles",
+      "ru":    "Лос-Анджелес",
+      "zh-CN": "洛杉矶"
+    }
   },
   "continent":  {
-      "code":       "NA",
-      "geoname_id": 123456,
-      "names":  {
-          "de":    "Nordamerika",
-          "en":    "North America",
-          "es":    "América del Norte",
-          "fr":    "Amérique du Nord",
-          "ja":    "北アメリカ",
-          "pt-BR": "América do Norte",
-          "ru":    "Северная Америка",
-          "zh-CN": "北美洲"
-
-      }
+    "code":       "NA",
+    "geoname_id": 123456,
+    "names":  {
+      "de":    "Nordamerika",
+      "en":    "North America",
+      "es":    "América del Norte",
+      "fr":    "Amérique du Nord",
+      "ja":    "北アメリカ",
+      "pt-BR": "América do Norte",
+      "ru":    "Северная Америка",
+      "zh-CN": "北美洲"
+    }
   },
   "country":  {
-      "confidence":  75,
-      "geoname_id":  6252001,
-      "iso_code":    "US",
-      "names":  {
-          "de":     "USA",
-          "en":     "United States",
-          "es":     "Estados Unidos",
-          "fr":     "États-Unis",
-          "ja":     "アメリカ合衆国",
-          "pt-BR":  "Estados Unidos",
-          "ru":     "США",
-          "zh-CN":  "美国"
-      }
+    "confidence":  75,
+    "geoname_id":  6252001,
+    "is_in_european_union": false,
+    "iso_code":    "US",
+    "names":  {
+      "de":     "USA",
+      "en":     "United States",
+      "es":     "Estados Unidos",
+      "fr":     "États-Unis",
+      "ja":     "アメリカ合衆国",
+      "pt-BR":  "Estados Unidos",
+      "ru":     "США",
+      "zh-CN":  "美国"
+    }
   },
   "location":  {
-      "accuracy_radius":     20,
-      "average_income":      128321,
-      "latitude":            37.6293,
-      "longitude":           -122.1163,
-      "metro_code":          807,
-      "population_density":  7122,
-      "time_zone":           "America/Los_Angeles"
+    "accuracy_radius":     20,
+    "average_income":      128321,
+    "latitude":            37.6293,
+    "longitude":           -122.1163,
+    "metro_code":          807,
+    "population_density":  7122,
+    "time_zone":           "America/Los_Angeles"
   },
   "postal": {
-      "code":       "90001",
-      "confidence": 10
+    "code":       "90001",
+    "confidence": 10
   },
   "registered_country":  {
-      "geoname_id":  6252001,
-      "iso_code":    "US",
-      "names":  {
-          "de":     "USA",
-          "en":     "United States",
-          "es":     "Estados Unidos",
-          "fr":     "États-Unis",
-          "ja":     "アメリカ合衆国",
-          "pt-BR":  "Estados Unidos",
-          "ru":     "США",
-          "zh-CN":  "美国"
-      }
+    "geoname_id":  6252001,
+    "is_in_european_union": false,
+    "iso_code":    "US",
+    "names":  {
+      "de":     "USA",
+      "en":     "United States",
+      "es":     "Estados Unidos",
+      "fr":     "États-Unis",
+      "ja":     "アメリカ合衆国",
+      "pt-BR":  "Estados Unidos",
+      "ru":     "США",
+      "zh-CN":  "美国"
+    }
   },
   "represented_country":  {
-      "geoname_id":  6252001,
-      "iso_code":    "US",
-      "names":  {
-          "de":     "USA",
-          "en":     "United States",
-          "es":     "Estados Unidos",
-          "fr":     "États-Unis",
-          "ja":     "アメリカ合衆国",
-          "pt-BR":  "Estados Unidos",
-          "ru":     "США",
-          "zh-CN":  "美国"
-      },
-      "type": "military"
+    "geoname_id":  6252001,
+    "is_in_european_union": false,
+    "iso_code":    "US",
+    "names":  {
+      "de":     "USA",
+      "en":     "United States",
+      "es":     "Estados Unidos",
+      "fr":     "États-Unis",
+      "ja":     "アメリカ合衆国",
+      "pt-BR":  "Estados Unidos",
+      "ru":     "США",
+      "zh-CN":  "美国"
+    },
+    "type": "military"
   },
   "subdivisions":  [
-      {
-          "confidence":  50,
-          "geoname_id":  5332921,
-          "iso_code":    "CA",
-          "names":  {
-              "de":    "Kalifornien",
-              "en":    "California",
-              "es":    "California",
-              "fr":    "Californie",
-              "ja":    "カリフォルニア",
-              "ru":    "Калифорния",
-              "zh-CN": "加州"
-          }
+    {
+      "confidence":  50,
+      "geoname_id":  5332921,
+      "iso_code":    "CA",
+      "names":  {
+        "de":    "Kalifornien",
+        "en":    "California",
+        "es":    "California",
+        "fr":    "Californie",
+        "ja":    "カリフォルニア",
+        "ru":    "Калифорния",
+        "zh-CN": "加州"
       }
+    }
   ],
   "traits": {
-      "autonomous_system_number":      1239,
-      "autonomous_system_organization": "Linkem IR WiMax Network",
-      "domain":                        "example.com",
-      "is_anonymous_proxy":            true,
-      "is_satellite_provider":         true,
-      "isp":                           "Linkem spa",
-      "ip_address":                    "1.2.3.4",
-      "organization":                  "Linkem IR WiMax Network",
-      "user_type":                     "traveler"
+    "ip_address":                     "1.2.3.4",
+    "network":                        "1.2.3.0/24",
+    "autonomous_system_number":       1239,
+    "autonomous_system_organization": "Linkem IR WiMax Network",
+    "domain":                         "example.com",
+    "isp":                            "Linkem spa",
+    "organization":                   "Linkem IR WiMax Network",
+    "is_anonymous":                   true,
+    "is_anonymous_proxy":             true,
+    "is_anonymous_vpn":               true,
+    "is_hosting_provider":            true,
+    "is_public_proxy":                true,
+    "is_residential_proxy":           true,
+    "is_satellite_provider":          true,
+    "is_tor_exit_node":               true,
+    "static_ip_score":                1.5,
+    "user_count":                     1,
+    "user_type":                      "traveler"
   },
   "maxmind": {
-      "queries_remaining":            54321
+    "queries_remaining": 54321
   }
 }`
 
@@ -206,6 +217,29 @@ func TestApi(t *testing.T) {
 					So(err, ShouldBeNil)
 					So(resp.City.Confidence, ShouldEqual, 25)
 				})
+
+				Convey("I expect Traits to be properly populated", func() {
+					So(err, ShouldBeNil)
+					So(resp.Traits.IpAddress, ShouldEqual, "1.2.3.4")
+					So(resp.Traits.Network, ShouldEqual, "1.2.3.0/24")
+					So(resp.Traits.AutonomousSystemNumber, ShouldEqual, 1239)
+					So(resp.Traits.AutonomousSystemOrganization, ShouldEqual, "Linkem IR WiMax Network")
+					So(resp.Traits.Domain, ShouldEqual, "example.com")
+					So(resp.Traits.Isp, ShouldEqual, "Linkem spa")
+					So(resp.Traits.Organization, ShouldEqual, "Linkem IR WiMax Network")
+					So(resp.Traits.IsAnonymous, ShouldEqual, true)
+					So(resp.Traits.IsAnonymousProxy, ShouldEqual, true)
+					So(resp.Traits.IsAnonymousVpn, ShouldEqual, true)
+					So(resp.Traits.IsHostingProvider, ShouldEqual, true)
+					So(resp.Traits.IsPublicProxy, ShouldEqual, true)
+					So(resp.Traits.IsResidentialProxy, ShouldEqual, true)
+					So(resp.Traits.IsSatelliteProvider, ShouldEqual, true)
+					So(resp.Traits.IsTorExitNode, ShouldEqual, true)
+					So(resp.Traits.StaticIpScore, ShouldEqual, 1.5)
+					So(resp.Traits.UserCount, ShouldEqual, 1)
+					So(resp.Traits.UserType, ShouldEqual, "traveler")
+				})
+
 			})
 		})
 
