@@ -15,8 +15,8 @@
 package main
 
 import (
-	"os"
 	"encoding/json"
+	"os"
 
 	"github.com/savaki/geoip2"
 )
